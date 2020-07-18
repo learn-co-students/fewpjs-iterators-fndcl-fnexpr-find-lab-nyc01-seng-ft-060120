@@ -1,5 +1,10 @@
-const testVar = {}
+const testVar = {};
 
 function testFunc() {
-  return "hi"
+  return "hi";
 }
+
+const superbowlWin = (objectsArray) => {
+  let result = objectsArray.find(superbowl => superbowl.result === "W")
+  return !!result ? result.year : undefined
+};
