@@ -1,5 +1,6 @@
-const testVar = {}
 
-function testFunc() {
-  return "hi"
+
+superbowlWin = (record) => {
+  let object = record.find(record => record.result === 'W')
+  return !!object ? object.year : undefined
 }
